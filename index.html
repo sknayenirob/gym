@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- css link -->
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Hello website</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">S<span>-g</span>ym</a>
+                <div class="toggleMenu" onclick="_menu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <!-- end header -->
+            <div class="content">
+                <h1>Make Your Body<br>Fit and Stron<span>g</span>-</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quos dolores repellendus, reiciendis incidunt similique animi beatae temporibus nam consequatur!</p>
+                <a href="#">Get Strated</a>
+            </div>
+            <!-- end content -->
+            <ul class="sci">
+                <li><a href="#"><img src="./image2/facebook.png"></a></li>
+                <li><a href="#"><img src="./image2/twitter.png"></a></li>
+                <li><a href="#"><img src="./image2/instagram.png"></a></li>
+            </ul>
+            <!-- end social icon -->
+        </section>
+
+        <!-- Js text -->
+        <script>
+            function _menu() {
+                const toggleMenu = document.querySelector('.toggleMenu');
+                toggleMenu.classList.toggle('active');
+                // navigation
+                const navigation = document.querySelector('.navigation');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
